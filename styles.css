@@ -1,0 +1,274 @@
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(200, 200, 200);
+    margin: 0;
+}
+
+header {
+    background: url("images/festival.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+/*tečka je třída, element s třídou se může opakovat na webu */
+.intro-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*tento příkaz posune text o 50% své délky */
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 16px;
+    padding: 0 50px 0 50px;
+    text-wrap: nowrap; /*při zmenšení text zůstane na jednom řádku */
+}
+
+.intro-container h1{
+    font-size: 64px;
+}
+
+.intro-container p{
+    font-size: 28px;
+}
+
+.about-festival {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 48px;
+}
+
+.about-festival p{
+    font-size: 26px;
+    margin: 0;
+    padding: 32px;
+}
+
+#first-container {
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+    margin: 200px auto 100px auto;
+    padding: 40px;
+    border-radius: 20px;
+    position: relative;
+}
+
+/* hastag je id, které je vždy pouze jednou na webu */
+.image\.swift {
+    border-radius: 14px;
+    position:absolute;
+    right: -15%;
+    top: -20%;
+}
+
+#second-container {
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+    margin: 100px auto;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: right;
+    position: relative;
+}
+
+.image\.katty {
+    border-radius: 14px;
+    position:absolute;
+    left: -19%;
+    top: -30%;
+}
+
+.testimonials {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+
+.testimonials-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials-card {
+    width: 25%;
+    background-color: white;
+    border-radius: 16px;
+    padding: 32px 16px 32px 16px;
+}
+
+.testimonials-card img {
+    border-radius: 50%;
+    border: 5px solid black;
+    width: 92px;
+    height: 92px;
+}
+
+.testimonials-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.testimonials-card h3 {
+    font-size: 24px;
+}
+
+.testimonials-card h4 {
+    font-size: 20px;
+    color: rgb(160, 160, 160);
+    margin-bottom: 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    font-size: 28px;
+    justify-content: space-evenly;
+    padding: 16px 0 16px 0;
+    margin: 0;
+    background: black;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover {
+    color: gray;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icons .fa {
+    font-size: 32px;
+}
+
+footer {
+    padding: 16px 0 16px 0;
+    background: black;
+}
+
+.fa-facebook {
+    color: dodgerblue;
+}
+
+.fa-instagram {
+    color: #f800ff;
+}
+
+.fa-youtube-play {
+    color:red;
+}
+
+.contact-container {
+    text-align: center;
+    font-size: 26px;
+}
+
+.footer-links {
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 24px;
+    font-size: 20px;
+}
+
+.copyright {
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+.footer-links a:hover {
+    color: gray;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+.fa-youtube-play:hover {
+    color: white;
+}
+
+.fa-instagram:hover {
+    color: white;
+}
+
+.fa-facebook:hover {
+    color: white;
+}
+
+#contact {
+    text-align: center;
+    font-size: 48px;
+}
+
+#contact-form {
+    width: 25%;
+    margin: auto;
+    text-align: left;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+input[type="button"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 22px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+input[type="button"]:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    height: 100px;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+label {
+    font-size: 22px;
+}
+
+.contact-container {
+    margin: 10px 10px 40px 10px;
+}
