@@ -10,9 +10,10 @@ body {
 }
 
 header {
-    background: url("images/festival.jpg");
+    background:linear-gradient(rgb(0, 0, 0), rgba(182, 5, 213, 0.8)), url("images/festival.jpg");
     background-size: cover;
     height: 100vh;
+
 }
 /*tečka je třída, element s třídou se může opakovat na webu */
 .intro-container {
@@ -21,18 +22,21 @@ header {
     left: 50%;
     transform: translate(-50%, -50%); /*tento příkaz posune text o 50% své délky */
     text-align: center;
-    border: 3px solid black;
+    border: 3px solid #ffffff;
     border-radius: 16px;
-    padding: 0 50px 0 50px;
+    padding: 0px 30px 0 30px;
+    margin: 50px 0 20px 0;
     text-wrap: nowrap; /*při zmenšení text zůstane na jednom řádku */
 }
 
 .intro-container h1{
     font-size: 64px;
+    color: #ffffff;
 }
 
 .intro-container p{
     font-size: 28px;
+    color: #ffffff;
 }
 
 .about-festival {
@@ -45,6 +49,11 @@ header {
     font-size: 26px;
     margin: 0;
     padding: 32px;
+}
+
+.singers-container {
+    display: flex;
+    flex-direction: column;
 }
 
 #first-container {
@@ -61,7 +70,7 @@ header {
     border-radius: 14px;
     position:absolute;
     right: -15%;
-    top: -20%;
+    top: -30%;
 }
 
 #second-container {
@@ -72,6 +81,23 @@ header {
     border-radius: 20px;
     text-align: right;
     position: relative;
+}
+
+#third-container {
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+    margin: 100px auto;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.image\.billie {
+    border-radius: 14px;
+    position:absolute;
+    right: -19%;
+    top: -30%;
 }
 
 .image\.katty {
@@ -127,6 +153,7 @@ header {
     color: rgb(160, 160, 160);
     margin-bottom: 0;
 }
+
 
 .nav-links {
     display: flex;
@@ -339,13 +366,13 @@ label {
 select {
     position: relative;
     padding: 5px;
-    font-size: 10px;
+    font-size: 16px;
     margin-top: 5px;
     margin-bottom: 8px;
     color: #ffffff;
     background-color: #000000;
     border-radius: 5px;
-    border-color: white;
+    border-color: #ffffff;
 
 }
 
@@ -423,7 +450,7 @@ select {
 }
 
 .tickets-card h3:hover {
-    color: #ff0000;
+    color: rgba(182, 5, 213, 0.8);
     background-color: #ffffff;
     transition-property: width;
 }
@@ -438,7 +465,7 @@ select {
     color: #000000;
     margin-bottom: 30px;
     font-size: 30px;
-    background-color: #8B795E;
+    background: linear-gradient(-45deg, rgb(161, 98, 56) 60%, rgb(255, 255, 255));
     padding: 20px 10px 20px 10px;
     border-radius: 10px;
     width: 85%;
@@ -450,7 +477,7 @@ select {
     color: #000000;
     margin-bottom: 30px;
     font-size: 30px;
-    background-color: #CDC9C9;
+    background: linear-gradient(-45deg, rgba(240, 240, 240, 0.37) 60%, rgb(255, 255, 255));
     padding: 20px 20px 20px 20px;
     border-radius: 10px;
     width: 85%;
@@ -461,7 +488,7 @@ select {
     color: #000000;
     margin-bottom: 30px;
     font-size: 30px;
-    background-color: #CDAD00;
+    background: linear-gradient(-45deg, rgb(255, 223, 0) 60%, rgb(255, 255, 255));
     padding: 20px 20px 20px 20px;
     border-radius: 10px;
     width: 85%;
@@ -474,7 +501,7 @@ select {
     color: #000000;
     margin-bottom: 30px;
     font-size: 30px;
-    background-color: #00F5FF;
+    background:  linear-gradient(-45deg, rgba(29, 188, 182, 0.91) 10%, rgba(0, 255, 243, 0.91) 70%, rgb(255, 255, 255) 100%);
     padding: 20px 20px 20px 20px;
     border-radius: 10px;
     width: 85%;
@@ -543,4 +570,70 @@ select {
     border-color: #b500ff;
     font-size: 32px;
     transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-links{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+
+    }
+
+    .footer-links{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+
+    }
+
+    .intro-container {
+        text-wrap: wrap;
+        margin-top: 50%;
+        margin-bottom: 50%;
+        padding: 10px;
+    }
+
+    .singers-container {
+        gap: 30px;
+    }
+
+    #first-container {
+        width: 70%;
+    }
+
+    #second-container {
+        width: 70%;
+    }
+
+    #third-container {
+        width: 70%;
+    }
+
+    .testimonials-card {
+        width: 30%;
+    }
+
+    .testimonials-cards{
+        margin: 0 -25% 0 -25%;
+    }
+
+    #contact-form {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .testimonials-cards {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .testimonials-card {
+        width: 90%;
+        margin: 0 0 0 5%
+    }
+
 }
